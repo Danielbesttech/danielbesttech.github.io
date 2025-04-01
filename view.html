@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <title>Roleta</title>
+</head>
+
+<body>
+  <div class="item1" id="container">
+    <h1>Roleta Pedagógica</h1>
+    <div id="roleta">
+      <div id="interno-roleta">
+
+      </div>
+      <div id="spin">
+        <div id="iterno-spin"></div>
+      </div>
+    </div>
+  </div>
+  <div class="item2" id="base">
+    <div id="frase">
+      <p name="" id="textoFrase"></p>
+      <div class="novaLetra">
+        <input style="text-transform: uppercase;" type="text" id="nova" class="nova" />
+        <button id="btnNova" onclick="comparar()">Comparar</button>
+      </div>
+      <div id="erradas" class="novaLetra"></div>
+    </div>
+  </div>
+  <div class="item3" id="containerPalavra">
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
