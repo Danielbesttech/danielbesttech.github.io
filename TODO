@@ -1,8 +1,17 @@
 Roleta pedagógica
 Todo:
-  ☐ CSS da palavra
   ☐ CSS da entrada de letra
+  ☐ CSS background 1.0
+  ☐ responsividade
   ☐ CSS geral
-  ✔ Unificar lista das perguntas com lista de palavras @done(25-03-31 11:14)
   ☐ local para inserir listas
   ☐ pontuação
+  ☐ CSS roleta 2.0
+  ☐ tratar casos em que aja separação de palavras ou hífen
+  ☐ jogo TRUCO PEDAGÓGICO
+
+Archive:
+  ✔ refatoração nível 1 @started(25-04-05 04:12) @done(25-04-05 05:18) @lasted(1h6m23s) @project(Todo)
+  ✔ sons @done(25-04-05 06:14) @project(Todo)
+  ✔ CSS da palavra @done(25-04-05 02:14) @project(Todo)
+  ✔ Unificar lista das perguntas com lista de palavras @done(25-03-31 11:14) @project(Todo)

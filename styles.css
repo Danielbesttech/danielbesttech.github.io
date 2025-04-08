@@ -12,16 +12,19 @@ body {
  }
 
  /*GRID*/
+
+
  .item1{
-  grid-column: 1;
+  grid-column: 2/4;
   grid-row: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
- .item2{
-  grid-column: 2/4;
+.item2{
+  grid-column: 1;
   grid-row: 1;
   display: flex;
   justify-content: center;
@@ -37,7 +40,7 @@ body {
 }
 
 /* ROLETA */
-*{	margin:0;	padding:0; }
+/* *{	margin:0;	padding:0; } */
 
 body{
 	background:#1d1b1bfb;
@@ -54,7 +57,7 @@ h1{
 
 /*WRAPPER*/
 #container{
-	margin: 40px auto 0;
+	/* margin: 40px auto 0; */
 	/* width:266px; */
 	position:relative;
   flex-direction: column;
@@ -127,6 +130,38 @@ h1{
 	border-color: #100f0e transparent;
 }
 
+/* #roleta div.sec:nth-child(1){
+	transform: rotate(45deg);
+	border-color: #e60810 transparent;
+}
+#roleta div.sec:nth-child(2){
+  transform: rotate(90deg);
+	border-color: #f6d207 transparent;
+}
+#roleta div.sec:nth-child(3){
+  transform: rotate(135deg);
+	border-color: #22e708 transparent;
+}
+#roleta div.sec:nth-child(4){
+  transform: rotate(180deg);
+	border-color: #2d2dea transparent;
+}
+#roleta div.sec:nth-child(5){
+  transform: rotate(225deg);
+	border-color: #ee2a99 transparent;
+}
+#roleta div.sec:nth-child(6){
+  transform: rotate(270deg);
+	border-color: #100f0e transparent;
+}
+#roleta div.sec:nth-child(7){
+  transform: rotate(315deg);
+	border-color: #310372 transparent;
+}
+#roleta div.sec:nth-child(8){
+  transform: rotate(360deg);
+	border-color: #0f89e0 transparent;
+} */
 
 #roleta div.sec .texto{
 	margin-top: -120px;
@@ -238,6 +273,7 @@ h1{
   color: aliceblue;
   font-size: 22px;
   border: blanchedalmond solid 1px;
+  text-align: center;
 }
 
 div#erradas{
@@ -311,3 +347,85 @@ body {
       transition: width 0.1s ease, height 0.1s ease 0.1s; }
     .highlight.act:after {
       transition: width 0.1s ease 0.2s, height 0.1s ease 0.3s, visibility 0s 0.2s; }
+
+      /*EFEITO WIN*/
+      .blocosPalavra{
+        display: inline-block;
+        transform: rotateY(0deg);
+        transition: 0.5s;
+        /* animation: bounce 0.4s ease infinite alternate; */
+        position: relative;
+      }
+
+        /* #containerPalavra:nth-child(3) {
+          animation-delay: 0.2s;
+          border: 1px solid red;
+        } */
+
+      /* #containerPalavra:nth-child(4) {
+        animation-delay: 0.10s;
+        border: 1px solid rgb(9, 255, 0);
+      }
+
+      #containerPalavra:nth-child(5) {
+        animation-delay: 0.15s;
+        border: 1px solid rgb(68, 0, 255);
+      }
+
+      #containerPalavra:nth-child(6) {
+        animation-delay: 0.20s;
+        border: 1px solid rgb(225, 255, 0);
+      } */
+      @keyframes bounce {
+        100% {
+          top: -20px;
+          text-shadow: 0 1px 0 #ccc,
+            0 2px 0 #ccc,
+            0 3px 0 #ccc,
+            0 4px 0 #ccc,
+            0 5px 0 #ccc,
+            0 6px 0 #ccc,
+            0 7px 0 #ccc,
+            0 8px 0 #ccc;
+        }
+      }
+.topo{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* flex-direction: row; */
+}
+/* #frase{
+  padding: 5px;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+} */
+
+#textoFrase{
+  padding: 5px;
+  font-size: 28px;
+  letter-spacing: 0.6px;
+}
+
+.novaLetra{
+  padding: 5px;
+  display: flex;
+  width: 100%;
+  min-width: 300px;
+  justify-content: space-evenly;
+}
+
+.comandos{
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+  /* padding: 5px; */
+  width: 100px;
+  margin-left: 5px;
+}
+
+.comandos button{
+  height: 25px;
+  width: 100px;
+}

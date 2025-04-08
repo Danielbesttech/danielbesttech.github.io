@@ -7,31 +7,40 @@
   <link rel="stylesheet" href="styles.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  <title>Roleta</title>
+  <title>Roleta Pedagógica</title>
 </head>
 
 <body>
-  <div class="item1" id="container">
-    <h1>Roleta Pedagógica</h1>
-    <div id="roleta">
-      <div id="interno-roleta">
+  <div class="topo">
 
+
+    <div class="item1" id="base">
+      <div id="frase">
+        <p name="" id="textoFrase"></p>
+        <div class="novaLetra">
+          <input style="text-transform: uppercase;" type="text" id="nova" class="nova" />
+          <div class="comandos">
+            <button id="btnNova" onclick="comparar()">Comparar</button>
+            <button onclick="reload();">Reiniciar</button>
+          </div>
+        </div>
+        <div id="erradas" class="novaLetra"></div>
       </div>
-      <div id="spin">
-        <div id="iterno-spin"></div>
+    </div>
+    <div class="item2" id="container">
+      <h1>Roleta Pedagógica</h1>
+      <div id="roleta">
+        <div id="interno-roleta">
+
+        </div>
+        <div id="spin">
+          <div id="iterno-spin"></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="item2" id="base">
-    <div id="frase">
-      <p name="" id="textoFrase"></p>
-      <div class="novaLetra">
-        <input style="text-transform: uppercase;" type="text" id="nova" class="nova" />
-        <button id="btnNova" onclick="comparar()">Comparar</button>
-      </div>
-      <div id="erradas" class="novaLetra"></div>
-    </div>
-  </div>
+
+  <audio id="letraCerta" src=""></audio>
   <div class="item3" id="containerPalavra">
   </div>
   <script src="script.js"></script>
