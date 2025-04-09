@@ -29,6 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  min-height: 18vh;
 }
 
 /* ROLETA */
@@ -149,7 +151,7 @@ h1{
 	text-align:center;
 	line-height:68px;
 	color:rgb(37, 32, 32);
-	text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0,0,0,0.3) ;
+	/* text-shadow: 0 2px 0 #fff, 0 -2px 0 rgba(0,0,0,0.3) ; */
 	position: relative;
 	z-index: 100000;
 	width:68px;
@@ -193,38 +195,15 @@ h1{
 }
 
 /*PALAVRA*/
-#blocosPalavra{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 1px solid white;
-  width: 20px;
-  height: 20px;
-  align-content: space-around;
-}
-
-.blocosPalavra{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 3px solid black;
-  width: 50px;
-  height: 50px;
-  background: whitesmoke;
-  margin-left: 5px;
-  font-size: 28px;
-  color: orangered;
-  align-items: center;
-}
-
 .nova{
   width: 60px;
   height: 60px;
-  background-color: black;
+  background-color: #0000007a;
   color: aliceblue;
   font-size: 22px;
   border: blanchedalmond solid 1px;
   text-align: center;
+  border-radius: 15%;
 }
 
 div#erradas{
@@ -264,10 +243,16 @@ body {
 .highlight {
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
+  border-radius: 33%;
   text-align: center;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+  margin-left: 5px;
+  font-size: 4vh;
+  color: orangered;
+  width: 8vh;
+  height: 8vh;
+}
   .highlight:before, .highlight:after {
     content: '';
     width: 0%;
