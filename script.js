@@ -22,9 +22,10 @@ async function gerenciarReproducao(audio) {
 
 //LISTA DE TEMAS E RESPOSTAS(MODELO STRING:ARRAY)
 let listaPerguntas = {
-  "Um gênero textual: ": ["fabula", "poema", "conto", "teatro",],
+  "Um gênero textual: ": ["fabula", "poema", "conto", "teatro", "tirinhas", "quadrinhos", "lendas", "receita", "bilhete", "carta", "noticia", "propaganda", "diario"],
   "Tipos de contos: ": ["aventura", "misterio", "fadas", "piada", "romance"],
-  "Tem na fábula: ": ["animais", "personagens", "moral", "titulo"]
+  "Tem na fábula: ": ["animais", "personagens", "moral", "titulo", "narrador"],
+  "O que tem no poema ": ["rima", "estrofe", "verso"]
 }
 //LISTA DE PONTUAÇÕES DA ROLETA
 let listaRoleta = ["zero pontos", "+20 pontos", "+50 pontos", "-5 pontos", "+1 bala", "+1 vez"]
